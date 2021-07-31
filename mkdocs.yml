@@ -1,6 +1,23 @@
-site_name: ASP.NET Core Database Programming 101
+site_name: ASP.NET Core Database Programming
 nav:
-  - Home: index.md  
+  - Home: index.md
+  - 'Introduction':
+      - '1. Introduction': 'ch01.md'
+      - '2. Data, data-management & database': 'ch02.md'
+      - '3. Database Programming Intro': 'ch03.md'
+      - '4. Development Environment': 'ch04.md'
+  - 'Foundation Knowledge':
+      - '5. ASP.NET Core 101': 'ch05.md'
+      - '6. Data Sources': 'ch06.md'
+      - '7. Databases Programming 101': 'ch07.md'
+  - 'Database Application':
+      - '8. N-tier Layered Data Access': 'ch08.md'
+      - '9. Data Service Providers (WebAPI)': 'ch09.md'
+      - '10. Data Consumers': 'ch10.md'
+  - 'Securing & Monitoring Data Access':
+      - '11. Securing Data Access': 'ch11.md'
+      - '12. Logging and Monitoring': 'ch12.md'
+      - '13. External & Third-party authentication': 'ch13.md'
   - 'About': 'about.md'
 theme:
   name: 'readthedocs'
