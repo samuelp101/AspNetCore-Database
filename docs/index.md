@@ -1,6 +1,6 @@
 # ASP.NET Core Database Programming
 
-Database programming with ASP.NET Core, Entity Framework Core, ADO.NET, Object Relational Mapping (ORM) and SQL
+Database programming 101 with ASP.NET Core, Entity Framework Core, ADO.NET, Object Relational Mapping (ORM) and SQL
 
 <div style="border: 1px solid black; margin: 1em; padding: 1em; background-color: #ffffE0;">
   <span style="font-weight: 600;">Note: </span>
