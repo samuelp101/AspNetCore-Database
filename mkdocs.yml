@@ -1,0 +1,6 @@
+site_name: ASP.NET Core Database Programming
+nav:
+  - Home: index.md  
+  - 'About': 'about.md'
+theme:
+  name: 'readthedocs'
