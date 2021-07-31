@@ -1,4 +1,4 @@
-site_name: ASP.NET Core Database Programming
+site_name: ASP.NET Core Database Programming 101
 nav:
   - Home: index.md  
   - 'About': 'about.md'
