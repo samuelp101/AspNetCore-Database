@@ -4,7 +4,7 @@ Enterprise database application development with ASP.NET Core, Entity Framework 
 
 <div style="border: 1px solid black; margin: 1em; padding: 1em; background-color: #ffffE0;">
   <span style="font-weight: 600;">Note: </span>
-  This is a work-in-progress book project, based on the latest stabled version of the framework.  As in any work-in-progress project, errors and changes are expected.  
+  This is a work-in-progress book project, based on the latest stabled version of the framework.  As in any work-in-progress project, frequent updates are expected.  
 </div>
 
 ## Part-1: Introduction
