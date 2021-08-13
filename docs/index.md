@@ -1,6 +1,6 @@
 # ASP.NET Core Database Programming
 
-Enterprise database application development with ASP.NET Core, Entity Framework Core, ADO.NET, Object Relational Mapping (ORM) and SQL
+Enterprise database application development with ASP.NET Core, Entity Framework Core, ADO.NET and Object Relational Mapping (ORM), interacting with different data-sources including SQL, NoSQL, SQLite, MySQL, JSON, XML, Excel and etc. 
 
 <div style="border: 1px solid black; margin: 1em; padding: 1em; background-color: #ffffE0;">
   <span style="font-weight: 600;">Note: </span>
