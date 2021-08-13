@@ -18,6 +18,3 @@ jobs:
       - run: pip install mkdocs-material
 
       - run: mkdocs gh-deploy --force
-
-env:
-  GITHUB_DOMAIN: dotnetcore101.com
