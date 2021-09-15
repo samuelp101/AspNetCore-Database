@@ -13,10 +13,8 @@ Each chapter and associated sample codes are self contain with little or no depe
 In addition to knowing the programming language and associated technologies, Design-Principle (such as SOLID and DRY) and  Design-Patterns are important keys to developing manageable, efficient and secure codes with minimal technical debt . . .  While my intention for the content is to talk about the technology and how to use them, Security, Design-Principle and Design-Patterns are important keys in creating "Secure, Efficient, Manageable and Testable" codes, a few chapters are allocated to talk about these subjects. 
 
 
-Samuel Phung
-
-https://twitter.com/samuelp101
-
+Samuel Phung 
+https://twitter.com/samuelp101 
 https://www.linkedin.com/in/samuelp101/
 
 
