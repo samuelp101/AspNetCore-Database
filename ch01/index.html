@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>1. Introduction - ASP.NET Core Database Programming</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "1. Introduction";
+    var mkdocs_page_input_path = "ch01.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASP.NET Core Database Programming</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">1. Introduction</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#why-aspnet-core">Why ASP.NET Core?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pros-and-cons">Pros and Cons</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pros">Pros</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cons">Cons</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch02/">2. Data, data-management & database</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch03/">3. Database Programming Intro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch04/">4. Development Environment</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Foundation Knowledge</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch05/">5. ASP.NET Core 101</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch06/">6. Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch07/">7. Databases Programming 101</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Database Application</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch08/">8. N-tier Layered Data Access</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch09/">9. Data Service Providers (WebAPI)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch10/">10. Data Consumers</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Securing & Monitoring Data Access</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch11/">11. Securing Data Access</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch12/">12. Logging and Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch13/">13. External & Third-party authentication</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASP.NET Core Database Programming</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Introduction &raquo;</li>
+        
+      
+    
+    <li>1. Introduction</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="introduction">Introduction</h1>
+<h2 id="why-aspnet-core">Why ASP.NET Core?</h2>
+<p>It's difficult to adequately address this question without some level of bias, where many of the key factors are highly opinionated depending on your own technology preference, area of interest, existing knowledge, familiarity with the technology, personal view about the marketplace and competition.  </p>
+<p>In addition, answering this question as an individual developer without business consideration can be very different from answering this question with business consideration.</p>
+<p>In general, all software frameworks each has certain benefits, created to help improve development efficiency, minimize repetitive codes and simplify code-complexity.  Comparing with some other disciplines, such as music, mathematic and medical-science which have been around for thousands of years, the software development domain is very young, only been around for less than 80 years with lots of room for new innovation and improvement.  And, some of the newer software development disciplines, such as artificial intelligence, data-science and machine-learning are even younger, evolved within the last 10 to 20 years or so.</p>
+<p>Over the past half-centry, the software development environment has been through multiple evolutions, changed from using mainframe computers on the back-end with terminal-clients on the front-end, to PC-based client-server model. Then, within the last 20 years, as the result from the explosive growth in the Internet, mobile-device and cloud-computing marketplaces, mobile and web-based application became important development focus areas that impacted just about every software technology company in the world.</p>
+<p>In the foreseeable future, computing-hardware, information-technology-infrastructure, cybersecurity, privacy-concerns, legal-mandates and market-expectations that impact software development are expected to go through dramatic changes.  A software framework rated as the best this year by some organization, may be forgotten or abandoned in just a few years.</p>
+<p>The software development environment is humongous, and you don't have to work with the most popular ones to be successful.  In fact, focusing on certain specialty can yield higher pay and rewarding career path.</p>
+<p>When selecting a software or application development framework, for an enterprise application project with long life-cycle and serious financial impact, it's prudent to include the following considerations:</p>
+<ul>
+<li>
+<p>Framework/Technology maturity</p>
+</li>
+<li>
+<p>Cybersecurity and legal concerns</p>
+</li>
+<li>
+<p>Community and support</p>
+</li>
+<li>
+<p>Development environment and tools</p>
+</li>
+<li>
+<p>Deployment and maintenance environment and tools</p>
+</li>
+<li>
+<p>Licensing</p>
+</li>
+<li>
+<p>Available pool of talents</p>
+</li>
+<li>
+<p>Technical debt associate with the project's life-cycle</p>
+</li>
+</ul>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<p>Talking about a technology platform's Pros and Cons is highly opinionated.  A pros for one developer can become a cons for another developer, and vise versa.
+Instead of talking about specific technical specification, let's look the the pros and cons based on general common sense consideration. </p>
+<h3 id="pros">Pros</h3>
+<ul>
+<li>Mature with highly active and continuous improvement since 2002</li>
+<li>Open-source, support and maintain by well established technology company with strong financial and technical resources</li>
+<li>Actively supported by large number of global community spanning across the world   </li>
+<li>Lots of technical contents and learning resources available (books, articles, blog-posts, videos, usergroup, in-person)</li>
+<li>Cross platform deployment (production codes can be deployed onto Windows, Linux and Max operating system)</li>
+<li>Cross platform professional grade development tools available at no cost. Visual Studio (supports Windows and Max) and Visual Studio Code (supports Windows, Mac and Linux)</li>
+<li>Large pool of extension and support resources</li>
+</ul>
+<h3 id="cons">Cons</h3>
+<ul>
+<li>It's an opinionated framework</li>
+<li>Fairly large and complex code base, which requires quite a bit of times and efforts to learn and understand</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ch02/" class="btn btn-neutral float-right" title="2. Data, data-management & database">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ch02/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

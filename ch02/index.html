@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>2. Data, data-management & database - ASP.NET Core Database Programming</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "2. Data, data-management & database";
+    var mkdocs_page_input_path = "ch02.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASP.NET Core Database Programming</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../ch01/">1. Introduction</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">2. Data, data-management & database</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#data">Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-security-and-privacy">Data security and Privacy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#confidentiality-integrity-and-availability-cia">Confidentiality, integrity and availability (CIA)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#confidentiality">Confidentiality</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#integrity">Integrity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#availability">Availability</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-management">Data management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-sources">Data sources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#databases">Databases</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch03/">3. Database Programming Intro</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch04/">4. Development Environment</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Foundation Knowledge</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch05/">5. ASP.NET Core 101</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch06/">6. Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch07/">7. Databases Programming 101</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Database Application</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch08/">8. N-tier Layered Data Access</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch09/">9. Data Service Providers (WebAPI)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch10/">10. Data Consumers</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Securing & Monitoring Data Access</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch11/">11. Securing Data Access</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch12/">12. Logging and Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ch13/">13. External & Third-party authentication</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASP.NET Core Database Programming</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Introduction &raquo;</li>
+        
+      
+    
+    <li>2. Data, data-management & database</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="data-data-management-and-databases">Data, Data-Management and Databases</h1>
+<h2 id="data">Data</h2>
+<p>Regardless of the technology platform, targeted users or industries, all software application are designed to deal with data, and interact with different sources of data, including data from different sources, including database, Excel file, CSV file, JSON file, XML file, Web-API, Web-Services and etc.</p>
+<h2 id="data-security-and-privacy">Data security and Privacy</h2>
+<p>Data security and privacy are key concerns in today's application.  In addition to preventing data breach, there are distinct legal mandates in different jurisdiction, which we must follow to avoid legal consequences.</p>
+<h2 id="confidentiality-integrity-and-availability-cia">Confidentiality, integrity and availability (CIA)</h2>
+<p>While the contents for this book is not about security, it's necessary for enterprise database application developer to have general understanding about CIA security concerns in database application, which is short for Confidentiality, Integrity and Availability.</p>
+<h3 id="confidentiality">Confidentiality</h3>
+<p>We need to ensure adequate access controls are implemented to prevent unauthorized access to data. </p>
+<h3 id="integrity">Integrity</h3>
+<p>We need to implement adequate protection to ensure data accuracy, consistency, and prevent unauthorized data tempering.</p>
+<h3 id="availability">Availability</h3>
+<p>We need to implement adequate measures to keep data accessible by authorized entities.</p>
+<h2 id="data-management">Data management</h2>
+<p>In an large organization, there is generally a separate data management team, tasked with the responsibilities to maintain the organization's data, data storage infrastructure and controlling access to data.  As a database programmer, you need to have general understanding about data management, including:</p>
+<ul>
+<li>Database creation, backup and restore</li>
+<li>Database queries and updates</li>
+<li>Database access control</li>
+<li>Managing database server access keys and secrets</li>
+<li>Etc.</li>
+</ul>
+<h2 id="data-sources">Data sources</h2>
+<p>Data and database are two separate subjects.  There are different data sources, which may not be coming from a database such as:</p>
+<ul>
+<li>CSV, JSON or XML files</li>
+<li>Web-API or Web-Services</li>
+<li>Data stream from IoT devices</li>
+<li>Etc.</li>
+</ul>
+<h2 id="databases">Databases</h2>
+<p>There are different type of databases, for different environments and purposes such as:</p>
+<ul>
+<li>Microsoft SQL Server</li>
+<li>Azure SQL</li>
+<li>SQLite</li>
+<li>Cosmos DB</li>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>Oracle</li>
+<li>Access</li>
+<li>Etc.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ch03/" class="btn btn-neutral float-right" title="3. Database Programming Intro">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ch01/" class="btn btn-neutral" title="1. Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ch01/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ch03/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
